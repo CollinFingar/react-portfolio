@@ -84,6 +84,7 @@ export const IntroWrapper = styled.div`
   @media only screen and (max-width: ${md}) {
     padding-left: 0px;
     text-align: center;
+    margin-top: -32px;
   }
 `;
 
