@@ -35,7 +35,7 @@ const Landing = () => {
         </LandingAnimWrapper>
         <LandingAnimWrapper delay={2}>
           <ExplanationWrapper>
-            <span>I'm a</span>Senior Web Developer.
+            <span>I'm a</span>Senior Software Engineer.
           </ExplanationWrapper>
         </LandingAnimWrapper>
       </IntroWrapper>

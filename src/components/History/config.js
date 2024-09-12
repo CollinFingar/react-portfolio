@@ -1,8 +1,22 @@
 const careers = [
   {
     position: "Senior Software Engineer",
-    start: "Mar 2022",
+    start: "Dec 2022",
     end: "present",
+    company: "Capital One",
+    techs: [
+      "Angular",
+      "Vue.js",
+      "AWS",
+      "Node.js",
+      "D3.js",
+      "SCSS",
+    ],
+  },
+  {
+    position: "Senior Software Engineer",
+    start: "Mar 2022",
+    end: "Dec 2022",
     company: "Major League Baseball",
     techs: [
       "React",

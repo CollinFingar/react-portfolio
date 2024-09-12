@@ -8,21 +8,21 @@ import { SectionHeader } from "../../globals/styled";
 import AnimateIn from "../AnimateIn/AnimateIn";
 
 const currentSkillsConfig = [
-  "React",
-  "Storybook",
+  "Angular",
+  "Vue.js",
+  "AWS Cert",
+  "Node.js",
+  "D3.js",
   "TypeScript",
-  "styled-components",
-  "Webpack",
   "SCSS",
   "Agile",
 ];
 
 const otherSkillsConfig = [
-  "AngularJS",
-  "Vue.js",
-  "Python",
+  "React",
+  "styled-components",
+  "Storybook",
   "Java",
-  "C/C++",
   "Unity Engine",
   "Unreal Engine",
   "Virtual Reality",

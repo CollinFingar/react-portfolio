@@ -22,16 +22,15 @@ const Profile = () => {
         </AnimateIn>
         <AnimateIn>
           <SectionText>
-            Hey! My name is Collin. I am a software engineer with extensive
-            experience and a passion for building front-end interfaces!
+            Hey! My name is Collin. I am a senior software engineer with extensive
+            experience and a passion for building web pages and tools!
           </SectionText>
           <SectionText>
             I'm currently based in New Jersey and working for{" "}
-            <a target="_blank" href="https://www.mlb.com">
-              Major League Baseball
+            <a target="_blank" href="https://www.capitalone.com/">
+              Capital One
             </a>{" "}
-            to create top-of-the-line React web applications for America's
-            favorite pastime.
+            to create top-of-the-line scalable full-stack applications for our credit card holders.
           </SectionText>
           <SectionText>
             As conveyed by my Senior position, I've found my calling and can

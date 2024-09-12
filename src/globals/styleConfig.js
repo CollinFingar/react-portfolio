@@ -1,9 +1,9 @@
 export const COLORS = {
-  highlight: "#6ed9e4",
+  highlight: "#49dede",
   bodyText: "#ccc",
   titles: "#fff",
   darkText: "#888",
-  bgColor: "#222",
+  bgColor: "#103838",
 };
 
 export const SPACING = {
