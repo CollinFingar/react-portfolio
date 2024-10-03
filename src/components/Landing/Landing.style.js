@@ -13,10 +13,10 @@ const colorChange = keyframes`
     0% {
         color: ${highlight};
     }
-    30% {
+    33% {
         color: ${bodyText};
     }
-    70% {
+    66% {
         color: ${bodyText};
     }
     100% {

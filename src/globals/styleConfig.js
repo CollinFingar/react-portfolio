@@ -3,7 +3,7 @@ export const COLORS = {
   bodyText: "#ccc",
   titles: "#fff",
   darkText: "#888",
-  bgColor: "#103838",
+  bgColor: "#092121",
 };
 
 export const SPACING = {
