@@ -34,20 +34,20 @@ const Skills = () => {
   const currentSkills = (
     <CurrentSkillsListWrapper>
       {currentSkillsConfig.map((skill) => (
-        <div>{skill}</div>
+        <div key={skill}>{skill}</div>
       ))}
     </CurrentSkillsListWrapper>
   );
   const previousSkills = (
     <SkillsListWrapper>
       {otherSkillsConfig.map((skill) => (
-        <div>{skill}</div>
+        <div key={skill}>{skill}</div>
       ))}
     </SkillsListWrapper>
   );
 
   return (
-    <SkillsWrapper>
+    <SkillsWrapper id="skills">
       <AnimateIn>{currentTitle}</AnimateIn>
       <AnimateIn>{currentSkills}</AnimateIn>
       <AnimateIn>{previousTitle}</AnimateIn>

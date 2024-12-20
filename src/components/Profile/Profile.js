@@ -12,7 +12,7 @@ import AnimateIn from "../AnimateIn/AnimateIn";
 
 const Profile = () => {
   return (
-    <ProfileWrapper>
+    <ProfileWrapper id="profile">
       <ProfileImgWrapper>
         <img src={Headshot} />
       </ProfileImgWrapper>
@@ -22,20 +22,17 @@ const Profile = () => {
         </AnimateIn>
         <AnimateIn>
           <SectionText>
-            Hey! My name is Collin. I am a senior software engineer with extensive
-            experience and a passion for building web pages and tools!
+            Hey! My name is Collin. I'm a passionate full-stack software
+            engineer with 8+ years of experience building innovative web
+            applications.
           </SectionText>
           <SectionText>
-            I'm currently based in New Jersey and working for{" "}
-            <a target="_blank" href="https://www.capitalone.com/">
-              Capital One
-            </a>{" "}
-            to create top-of-the-line scalable full-stack applications for our credit card holders.
+            I'm skilled in frontend technologies like React, Angular, and
+            Vue.js, as well as backend development with Node.js and AWS.
           </SectionText>
           <SectionText>
-            As conveyed by my Senior position, I've found my calling and can
-            demonstrate my web development prowess through my creative
-            problem-solving and history of mentoring others.
+            I'm passionate about creating intuitive user experiences and
+            leveraging data visualization to uncover insights.
           </SectionText>
         </AnimateIn>
       </ProfileInfo>

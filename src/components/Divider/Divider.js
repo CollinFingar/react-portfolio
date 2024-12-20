@@ -4,9 +4,10 @@ import { divider1, divider2, divider3 } from "./config";
 
 export const generateShapes = (config) => {
   let arr = [];
+  let i = 0;
   for (const c in config) {
     const item = config[c];
-    arr.push(<Shape {...item} />);
+    arr.push(<Shape key={i++} {...item} />);
   }
   return arr;
 };

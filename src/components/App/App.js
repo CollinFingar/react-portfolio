@@ -6,6 +6,7 @@ import Skills from "../Skills/Skills";
 import Resources from "../Resources/Resources";
 import Footer from "../Footer/Footer";
 import Landing from "../Landing/Landing";
+import Portfolio from "../Portfolio/Portfolio";
 import Divider from "../Divider/Divider";
 import { createGlobalStyle } from "styled-components";
 import { COLORS } from "../../globals/styleConfig";
@@ -32,8 +33,10 @@ const App = () => {
       <Divider />
       <Skills />
       <Divider type={2} />
-      <History />
+      <Portfolio />
       <Divider type={3} />
+      <History />
+      <Divider />
       <Resources />
       <Footer />
     </AppWrapper>

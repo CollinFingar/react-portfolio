@@ -4,14 +4,7 @@ const careers = [
     start: "Dec 2022",
     end: "present",
     company: "Capital One",
-    techs: [
-      "Angular",
-      "Vue.js",
-      "AWS",
-      "Node.js",
-      "D3.js",
-      "SCSS",
-    ],
+    techs: ["Angular", "Vue.js", "AWS", "Node.js", "D3.js", "SCSS"],
   },
   {
     position: "Senior Software Engineer",
@@ -20,6 +13,7 @@ const careers = [
     company: "Major League Baseball",
     techs: [
       "React",
+      "Redux",
       "styled-components",
       "Storybook",
       "TypeScript",
@@ -38,7 +32,7 @@ const careers = [
     start: "May 2017",
     end: "Nov 2018",
     company: "The MITRE Corp.",
-    techs: ["React", "SCSS", "Java", "Node.js", "Unity", "Unreal Engine", "VR"],
+    techs: ["React", "SCSS", "Node.js", "Java", "Unity", "Unreal Engine", "VR"],
   },
   {
     position: "Serious Gaming Intern",

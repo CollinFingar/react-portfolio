@@ -21,7 +21,7 @@ const generateCareers = () => {
   const careerArr = careers.map((career) => {
     const { position, start, end, company, description, techs = [] } = career;
     return (
-      <AnimateIn>
+      <AnimateIn key={start}>
         <HistoryItem>
           <ItemDot />
           <ItemPosition>{position}</ItemPosition>
@@ -31,13 +31,13 @@ const generateCareers = () => {
           </ItemDate>
           {/* <ItemDescription>{description}</ItemDescription> */}
           {techs.length ? (
-            <ItemTechWrapper>
+            <ItemTechWrapper key={start + "tech"}>
               {techs.map((item) => {
                 return (
-                  <>
+                  <React.Fragment key={item}>
                     <ItemTech>{item}</ItemTech>
                     <ItemSep> | </ItemSep>
-                  </>
+                  </React.Fragment>
                 );
               })}
             </ItemTechWrapper>
@@ -51,7 +51,7 @@ const generateCareers = () => {
 
 const History = () => {
   return (
-    <HistoryWrapper>
+    <HistoryWrapper id="history">
       <SectionHeader>Career History</SectionHeader>
       <HistoryItemsWrapper>
         <TimelineBar />
