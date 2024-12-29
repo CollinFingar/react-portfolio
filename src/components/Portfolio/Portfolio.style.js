@@ -16,6 +16,10 @@ export const PortfolioTextWrapper = styled.div`
     margin-bottom: ${SPACING.sm_spacing};
   }
 
+  h4 {
+    margin: ${SPACING.sm_spacing} 0px;
+  }
+
   @media only screen and (max-width: ${lg}) {
     h2 {
       font-size: 16px;
@@ -40,6 +44,18 @@ export const PortfolioWrapper = styled(SectionWrapper)``;
 export const PortfolioGridWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    ${PortfolioItemWrapper} {
+      transition-duration: 0.2s;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
 
   @media only screen and (max-width: ${lg}) {
     grid-template-columns: 1fr 1fr;

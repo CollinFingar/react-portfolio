@@ -13,40 +13,51 @@ import AnimateIn from "../AnimateIn/AnimateIn";
 
 import SpendingInsights from "../../assets/spending-insights.png";
 import GamedayLive from "../../assets/mlb-gameday-live.png";
-import GamedayWrap from "../../assets/mlb-gameday-wrap.png";
 import Schedule from "../../assets/mlb-schedule.png";
 import Scores from "../../assets/mlb-scores.png";
 import StatsPage from "../../assets/mlb-stats.png";
+import WhenToSpray from "../../assets/whentospray.png";
 
 const portfolioConfig = [
   {
     title: "Spending Insights",
+    company: "Capital One",
     tech: ["Angular", "D3.js", "SCSS"],
     imgSrc: SpendingInsights,
   },
   {
-    title: "MLB Gameday Live",
+    title: "Gameday",
+    company: "Major League Baseball",
     tech: ["React", "Redux", "styled-components"],
+    link: "https://www.mlb.com/gameday/pirates-vs-yankees/2024/09/28/745685/live",
     imgSrc: GamedayLive,
   },
   {
-    title: "MLB Gameday Wrap",
-    tech: ["React", "Redux", "styled-components"],
-    imgSrc: GamedayWrap,
+    title: "When To Spray",
+    company: "Personal",
+    tech: ["React", "D3.js", "styled-components"],
+    link: "https://whentospray.com/",
+    imgSrc: WhenToSpray,
   },
   {
-    title: "MLB Scores",
+    title: "Scores",
+    company: "Major League Baseball",
     tech: ["React", "Redux", "styled-components"],
+    link: "https://www.mlb.com/scores/2024-09-11",
     imgSrc: Scores,
   },
   {
-    title: "MLB Schedule",
+    title: "Schedule",
+    company: "Major League Baseball",
     tech: ["React", "Redux", "styled-components"],
+    link: "https://www.mlb.com/schedule/2024-09-11",
     imgSrc: Schedule,
   },
   {
-    title: "MLB Stats",
+    title: "Stats",
+    company: "Major League Baseball",
     tech: ["React", "Redux", "SCSS"],
+    link: "https://www.mlb.com/stats/",
     imgSrc: StatsPage,
   },
 ];
@@ -59,27 +70,31 @@ const Portfolio = () => {
       </AnimateIn>
       <PortfolioGridWrapper>
         {portfolioConfig.map((config) => {
-          const { title, tech, imgSrc } = config;
+          const { title, tech, imgSrc, company, link = "" } = config;
+          const LinkWrapper = !!link ? "a" : "div";
           return (
             <AnimateIn key={title}>
-              <PortfolioItemWrapper>
-                <PortfolioImageWrapper>
-                  <img src={imgSrc} />
-                </PortfolioImageWrapper>
-                <PortfolioTextWrapper>
-                  <h2>{title}</h2>
-                  <div>
-                    {tech.map((t, i) => {
-                      return (
-                        <React.Fragment key={i}>
-                          <ItemTech>{t}</ItemTech>
-                          {i < tech.length - 1 ? <ItemSep>|</ItemSep> : null}
-                        </React.Fragment>
-                      );
-                    })}
-                  </div>
-                </PortfolioTextWrapper>
-              </PortfolioItemWrapper>
+              <LinkWrapper href={link} target="_blank">
+                <PortfolioItemWrapper>
+                  <PortfolioImageWrapper>
+                    <img src={imgSrc} />
+                  </PortfolioImageWrapper>
+                  <PortfolioTextWrapper>
+                    <h2>{title}</h2>
+                    <h4>{company}</h4>
+                    <div>
+                      {tech.map((t, i) => {
+                        return (
+                          <React.Fragment key={i}>
+                            <ItemTech>{t}</ItemTech>
+                            {i < tech.length - 1 ? <ItemSep>|</ItemSep> : null}
+                          </React.Fragment>
+                        );
+                      })}
+                    </div>
+                  </PortfolioTextWrapper>
+                </PortfolioItemWrapper>
+              </LinkWrapper>
             </AnimateIn>
           );
         })}
